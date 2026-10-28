@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>404 - Page Not Found | Sayyad Hanifraza Sardar</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><defs><linearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'><stop offset='0%25' stop-color='%2338bdf8'/><stop offset='100%25' stop-color='%23a855f7'/></linearGradient></defs><rect width='100' height='100' rx='24' fill='%23070913'/><rect x='2' y='2' width='96' height='96' rx='22' fill='none' stroke='url(%23g)' stroke-width='4'/><text x='50' y='64' font-family='sans-serif' font-weight='900' font-size='42' fill='url(%23g)' text-anchor='middle'>HS.</text></svg>" />
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@500&family=Inter:wght@400;600;700&family=Poppins:wght@700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .not-found-container {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 30px;
+      text-align: center;
+      position: relative;
+      z-index: 2;
+    }
+    .not-found-box {
+      max-width: 600px;
+      padding: 50px 36px;
+      margin: 0 auto;
+    }
+    .glitch-code {
+      font-size: 6rem;
+      font-weight: 900;
+      line-height: 1;
+      font-family: var(--font-heading);
+      margin-bottom: 14px;
+    }
+    .not-found-desc {
+      font-size: 1.15rem;
+      color: var(--text-secondary);
+      margin-bottom: 30px;
+      line-height: 1.6;
+    }
+    .terminal-crumb {
+      background: rgba(0, 0, 0, 0.4);
+      border: 1px solid var(--glass-border);
+      border-radius: var(--radius-md);
+      padding: 14px;
+      font-family: var(--font-code);
+      font-size: 0.88rem;
+      color: var(--accent-cyan);
+      margin-bottom: 32px;
+      display: inline-block;
+    }
+  </style>
+</head>
+<body class="dark-theme">
+  <div class="ambient-glow glow-top-left"></div>
+  <div class="ambient-glow glow-top-right"></div>
+
+  <main class="not-found-container">
+    <div class="glass-card not-found-box">
+      <div class="section-tag"><i class="fa-solid fa-triangle-exclamation"></i> Error 404</div>
+      <h1 class="glitch-code text-gradient">404</h1>
+      <h2 style="font-size: 1.8rem; margin-bottom: 12px;">Page Out of Scope</h2>
+      <p class="not-found-desc">
+        The route you are searching for does not exist or has been relocated in this portfolio.
+      </p>
+
+      <div class="terminal-crumb">
+        &gt; HTTP 404: ResourceNotFound at /target_url
+      </div>
+
+      <div>
+        <a href="index.html" class="btn btn-primary btn-glow">
+          <i class="fa-solid fa-house"></i>
+          <span>Return to Portfolio</span>
+        </a>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

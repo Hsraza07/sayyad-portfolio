@@ -1,0 +1,1004 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <!-- Primary Meta Tags -->
+  <title>Sayyad Hanifraza Sardar | Aspiring Python Full Stack Developer</title>
+  <meta name="title" content="Sayyad Hanifraza Sardar | Aspiring Python Full Stack Developer" />
+  <meta name="description" content="Portfolio of Sayyad Hanifraza Sardar, an aspiring Python Full Stack Developer & BCS Graduate. Specializing in Python, Django, Flask, React.js, and Modern Web Development." />
+  <meta name="keywords" content="Sayyad Hanifraza Sardar, Python Developer, Full Stack Developer, Django, Flask, React.js, Web Development, Portfolio, BCS" />
+  <meta name="author" content="Sayyad Hanifraza Sardar" />
+  <meta name="theme-color" content="#070913" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://sayyadhanif.dev" />
+  <meta property="og:title" content="Sayyad Hanifraza Sardar | Aspiring Python Full Stack Developer" />
+  <meta property="og:description" content="Explore projects, skills, and academic achievements of Sayyad Hanifraza Sardar - Python Full Stack Developer." />
+  <meta property="og:image" content="assets/images/og-preview.svg" />
+
+  <!-- Favicon (Inline SVG for instant crisp display) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><defs><linearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'><stop offset='0%25' stop-color='%2338bdf8'/><stop offset='100%25' stop-color='%23a855f7'/></linearGradient></defs><rect width='100' height='100' rx='24' fill='%23070913'/><rect x='2' y='2' width='96' height='96' rx='22' fill='none' stroke='url(%23g)' stroke-width='4'/><text x='50' y='64' font-family='sans-serif' font-weight='900' font-size='42' fill='url(%23g)' text-anchor='middle'>HS.</text></svg>" />
+
+  <!-- Google Fonts: Inter & Poppins & Fira Code for code blocks -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome CDN for Tech & UI Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="dark-theme">
+  <!-- Subtle Ambient Glow Orbs -->
+  <div class="ambient-glow glow-top-left" aria-hidden="true"></div>
+  <div class="ambient-glow glow-top-right" aria-hidden="true"></div>
+  <div class="ambient-glow glow-center" aria-hidden="true"></div>
+
+  <!-- Interactive Background Canvas (Particles/Nodes) -->
+  <canvas id="ambient-canvas" aria-hidden="true"></canvas>
+
+  <!-- Accessibility Skip Link -->
+  <a href="#main-content" class="skip-to-content">Skip to main content</a>
+
+  <!-- Navigation Bar -->
+  <header class="navbar-wrapper" id="navbar-wrapper">
+    <nav class="navbar container" aria-label="Primary Navigation">
+      <a href="#home" class="nav-brand" aria-label="Sayyad Hanifraza Sardar Home">
+        <span class="brand-badge">HS<span class="brand-dot">.</span></span>
+        <span class="text-gradient">Hanifraza</span></span>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#career-goal" class="nav-link">Career Goal</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <!-- Nav Actions -->
+      <div class="nav-actions">
+        <!-- Theme Toggle Button -->
+        <button id="theme-toggle" class="btn-icon" aria-label="Toggle light or dark theme" title="Toggle Theme">
+          <i class="fa-solid fa-moon" id="theme-icon"></i>
+        </button>
+
+        <!-- Resume Download Button -->
+      
+          <a href="assets/resume/Sayyad_Hanifraza_Resume.pdf"
+          class="btn btn-resume"
+          download>
+          <i class="fa-solid fa-download"></i>
+          Download Resume
+          </a>
+
+
+        <!-- Mobile Menu Toggle -->
+        <button id="mobile-toggle" class="mobile-toggle-btn" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-links">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Mobile Menu Drawer Overlay -->
+  <div class="mobile-menu-overlay" id="mobile-menu-overlay" aria-hidden="true"></div>
+
+  <main id="main-content">
+    
+<!-- ==================== HERO SECTION ==================== -->
+<section id="home" class="hero-section">
+  <div class="container hero-grid">
+
+    <!-- Left: Intro Copy -->
+    <div class="hero-content">
+
+      <div class="hero-greeting-badge">
+        <span class="pulse-indicator" aria-hidden="true"></span>
+        <span>Available for Opportunities</span>
+      </div>
+
+      <h3 class="hero-subtitle">Hello, I'm</h3>
+
+      <h1 class="hero-title">
+        <span class="highlight-name">Sayyad Hanifraza</span>
+        <span class="text-gradient">Sardar</span>
+      </h1>
+
+      <div
+        class="typing-container"
+        aria-label="Role: Aspiring Python Full Stack Developer"
+      >
+        <span class="static-prefix">I am an </span>
+        <span id="typing-text" class="typing-text">
+          Aspiring Python Full Stack Developer
+        </span>
+        <span class="typing-cursor" aria-hidden="true">|</span>
+      </div>
+
+      <p class="hero-description">
+        "I build modern, responsive web applications and enjoy turning
+        ideas into practical digital solutions using Python and modern
+        web technologies."
+      </p>
+
+<!-- Hero Action Buttons -->
+<div class="hero-cta-group">
+  <a href="#projects" class="btn btn-primary">
+    <i class="fa-solid fa-rocket"></i>
+    Explore My Projects
+  </a>
+
+  <a href="#contact" class="btn btn-secondary">
+    <i class="fa-solid fa-paper-plane"></i>
+    Contact Me
+  </a>
+</div>
+
+<!-- Social Icons -->
+<div class="hero-social-links">
+  <span class="social-label">Connect with me:</span>
+
+<a href="https://github.com/Hsraza07"
+   class="social-icon"
+   target="_blank"
+   rel="noopener noreferrer"
+   aria-label="GitHub Profile">
+  <i class="fa-brands fa-github"></i>
+</a>
+
+<a
+  href="https://www.linkedin.com/in/sayyad-hanifraza/"
+  class="social-icon"
+  target="_blank"
+  rel="noopener noreferrer"
+  aria-label="Visit my LinkedIn profile"
+  title="Visit my LinkedIn profile"
+>
+  <i class="fa-brands fa-linkedin-in"></i>
+</a>
+  
+<a href="https://mail.google.com/mail/?view=cm&fs=1&to=sayyadhanif76@gmail.com"
+   class="social-icon"
+   target="_blank"
+   rel="noopener noreferrer"
+   title="Send me an email"
+   aria-label="Send me an email">
+    <i class="fa-solid fa-envelope"></i>
+</a>
+
+
+  <a href="tel:+91 7378709480"
+     class="social-icon" aria-label="Phone">
+    <i class="fa-solid fa-phone"></i>
+  </a>
+</div>
+
+
+    </div>
+
+    <!-- Right: My Profile Photo -->
+    <div class="profile-photo-wrapper">
+      <img
+        src="assets/images/sayyad.jpg"
+        alt="Sayyad Hanifraza Sardar"
+        class="profile-photo"
+      >
+    </div>
+
+  </div>
+</section>
+
+            <!-- Floating Tech Badges around the Card -->
+            <div class="floating-badge badge-python" style="--delay: 0s;">
+              <i class="fa-brands fa-python"></i>
+              <span>Python 3</span>
+            </div>
+            <div class="floating-badge badge-django" style="--delay: 1.5s;">
+              <i class="fa-solid fa-server"></i>
+              <span>Django</span>
+            </div>
+            <div class="floating-badge badge-react" style="--delay: 3s;">
+              <i class="fa-brands fa-react"></i>
+              <span>React.js</span>
+            </div>
+            <div class="floating-badge badge-mysql" style="--delay: 4.5s;">
+              <i class="fa-solid fa-database"></i>
+              <span>MySQL</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scroll Down Indicator -->
+      <div class="scroll-indicator">
+        <a href="#about" aria-label="Scroll down to About section">
+          <div class="mouse-icon">
+            <span class="wheel"></span>
+          </div>
+          <span class="scroll-text">Scroll Down</span>
+          <i class="fa-solid fa-chevron-down arrow-down"></i>
+        </a>
+      </div>
+    </section>
+
+    <!-- ==================== ABOUT ME SECTION ==================== -->
+    <section id="about" class="section about-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag"><i class="fa-regular fa-user"></i> Introduction</span>
+          <h2 class="section-title">About <span class="text-gradient">Me</span></h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="about-grid">
+          <!-- Left: About Narrative -->
+          <div class="about-text-content glass-card">
+            <div class="card-glow-header">
+              <i class="fa-solid fa-terminal text-gradient icon-header"></i>
+              <h3>Passionate Developer & Lifelong Learner</h3>
+            </div>
+            
+            <p class="about-lead">
+              "I am a Bachelor of Computer Science (BCS) graduate with a strong interest in web development and software engineering. I have knowledge of frontend and backend technologies, including HTML, CSS, JavaScript, Python, Django, SQL, MySQL, and React.js."
+            </p>
+            
+            <p class="about-body">
+              "I am passionate about developing innovative web applications, solving real-world problems, and continuously improving my technical skills. My goal is to become a skilled Python Full Stack Developer and contribute to building efficient, user-friendly digital solutions."
+            </p>
+
+            <div class="about-meta-list">
+              <div class="meta-item">
+                <i class="fa-solid fa-check-circle text-gradient"></i>
+                <span>Clean & Structured Code</span>
+              </div>
+              <div class="meta-item">
+                <i class="fa-solid fa-check-circle text-gradient"></i>
+                <span>Modern Web Architecture</span>
+              </div>
+              <div class="meta-item">
+                <i class="fa-solid fa-check-circle text-gradient"></i>
+                <span>Relational Database Management</span>
+              </div>
+              <div class="meta-item">
+                <i class="fa-solid fa-check-circle text-gradient"></i>
+                <span>Continuous Learning & Growth</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: 3 Key Highlight Cards -->
+          <div class="about-highlights-grid">
+            <!-- Card 1: Degree -->
+            <div class="glass-card highlight-card">
+              <div class="highlight-icon-wrapper">
+                <i class="fa-solid fa-graduation-cap"></i>
+              </div>
+              <div class="highlight-details">
+                <span class="highlight-label">Degree</span>
+                <h4 class="highlight-value">Bachelor of Computer Science</h4>
+                <p class="highlight-desc">Solid foundation in core computer science, software engineering principles, algorithms, and application development.</p>
+              </div>
+              <div class="card-glow-strip"></div>
+            </div>
+
+            <!-- Card 2: Percentage -->
+            <div class="glass-card highlight-card">
+              <div class="highlight-icon-wrapper">
+                <i class="fa-solid fa-chart-line"></i>
+              </div>
+              <div class="highlight-details">
+                <span class="highlight-label">Final-Year Percentage</span>
+                <h4 class="highlight-value text-gradient">79.02%</h4>
+                <p class="highlight-desc">Demonstrated strong analytical problem solving, academic excellence, and consistent hard work.</p>
+              </div>
+              <div class="card-glow-strip"></div>
+            </div>
+
+            <!-- Card 3: Grade -->
+            <div class="glass-card highlight-card">
+              <div class="highlight-icon-wrapper">
+                <i class="fa-solid fa-award"></i>
+              </div>
+              <div class="highlight-details">
+                <span class="highlight-label">Grade</span>
+                <h4 class="highlight-value">Grade: O — Outstanding</h4>
+                <p class="highlight-desc">Achieved the highest academic distinction grade, reflecting diligence and deep conceptual mastery.</p>
+              </div>
+              <div class="card-glow-strip"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== EDUCATION SECTION ==================== -->
+    <section id="education" class="section education-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag"><i class="fa-solid fa-book-open"></i> Academic Background</span>
+          <h2 class="section-title">Education <span class="text-gradient">Timeline</span></h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="timeline-container">
+          <!-- Timeline Track Line -->
+          <div class="timeline-line" aria-hidden="true"></div>
+
+          <!-- Timeline Item -->
+          <div class="timeline-item">
+            <div class="timeline-dot" aria-hidden="true">
+              <i class="fa-solid fa-graduation-cap"></i>
+            </div>
+
+            <div class="timeline-content glass-card">
+              <div class="timeline-badge-group">
+                <span class="badge badge-accent">Undergraduate Degree</span>
+                <span class="badge badge-success"><i class="fa-solid fa-star"></i> Grade O (Outstanding)</span>
+              </div>
+
+              <h3 class="timeline-degree">Bachelor of Computer Science (BCS)</h3>
+              <p class="timeline-focus">Focus: Computer Science, Software Engineering & Web Technologies</p>
+
+              <!-- Academic Performance Metrics Grid -->
+              <div class="education-metrics-grid">
+                <div class="metric-card">
+                  <span class="metric-title">Academic Performance</span>
+                  <div class="metric-number text-gradient">79.02%</div>
+                  <span class="metric-caption">Final-Year Score</span>
+                </div>
+
+                <div class="metric-card">
+                  <span class="metric-title">Awarded Grade</span>
+                  <div class="metric-number">Grade: O</div>
+                  <span class="metric-caption">Outstanding Academic Standing</span>
+                </div>
+              </div>
+
+              <!-- Core Academic Foundations -->
+              <div class="timeline-skills">
+                <span class="skills-subhead">Key Academic Competencies:</span>
+                <div class="skills-tag-wrap">
+                  <span class="skill-pill">Data Structures & Algorithms</span>
+                  <span class="skill-pill">Object-Oriented Programming (OOP)</span>
+                  <span class="skill-pill">Database Management Systems</span>
+                  <span class="skill-pill">Full Stack Web Development</span>
+                  <span class="skill-pill">Software Engineering Life Cycle</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== TECHNICAL SKILLS SECTION ==================== -->
+    <section id="skills" class="section skills-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag"><i class="fa-solid fa-microchip"></i> Core Competencies</span>
+          <h2 class="section-title">Technical <span class="text-gradient">Skills</span></h2>
+          <p class="section-subtitle">Categorized expertise across the modern web development stack</p>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="skills-category-grid">
+          <!-- Category 1: Frontend Development -->
+          <div class="skill-category-block">
+            <div class="category-header">
+              <div class="category-icon-box frontend-icon">
+                <i class="fa-solid fa-laptop-code"></i>
+              </div>
+              <div class="category-text">
+                <h3>Frontend Development</h3>
+                <span>Creating responsive, user-friendly and modern interfaces</span>
+              </div>
+            </div>
+
+            <div class="skills-items-grid">
+              <!-- HTML5 -->
+              <div class="glass-card skill-card">
+                <div class="skill-card-top">
+                  <div class="skill-icon html-color">
+                    <i class="fa-brands fa-html5"></i>
+                  </div>
+                  <span class="skill-chip">Markup</span>
+                </div>
+                <h4 class="skill-name">HTML5</h4>
+                <p class="skill-desc">Semantic document structure, web accessibility (a11y), clean syntax, and modern standards.</p>
+              </div>
+
+              <!-- CSS3 -->
+              <div class="glass-card skill-card">
+                <div class="skill-card-top">
+                  <div class="skill-icon css-color">
+                    <i class="fa-brands fa-css3-alt"></i>
+                  </div>
+                  <span class="skill-chip">Styling</span>
+                </div>
+                <h4 class="skill-name">CSS3</h4>
+                <p class="skill-desc">Responsive layouts, Flexbox, CSS Grid, custom properties, glassmorphism, and keyframe animations.</p>
+              </div>
+
+              <!-- JavaScript -->
+              <div class="glass-card skill-card">
+                <div class="skill-card-top">
+                  <div class="skill-icon js-color">
+                    <i class="fa-brands fa-js"></i>
+                  </div>
+                  <span class="skill-chip">Scripting</span>
+                </div>
+                <h4 class="skill-name">JavaScript</h4>
+                <p class="skill-desc">ES6+ syntax, asynchronous programming, DOM manipulation, Fetch API, and dynamic user interfaces.</p>
+              </div>
+
+              <!-- React.js -->
+              <div class="glass-card skill-card">
+                <div class="skill-card-top">
+                  <div class="skill-icon react-color">
+                    <i class="fa-brands fa-react"></i>
+                  </div>
+                  <span class="skill-chip">Library</span>
+                </div>
+                <h4 class="skill-name">React.js</h4>
+                <p class="skill-desc">Component-driven architecture, state & props management, React Hooks, and single-page apps.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 2: Backend Development -->
+          <div class="skill-category-block">
+            <div class="category-header">
+              <div class="category-icon-box backend-icon">
+                <i class="fa-solid fa-server"></i>
+              </div>
+              <div class="category-text">
+                <h3>Backend Development</h3>
+                <span>Architecting reliable server-side applications & APIs</span>
+              </div>
+            </div>
+
+            <div class="skills-items-grid">
+              <!-- Python -->
+              <div class="glass-card skill-card">
+                <div class="skill-card-top">
+                  <div class="skill-icon python-color">
+                    <i class="fa-brands fa-python"></i>
+                  </div>
+                  <span class="skill-chip">Core</span>
+                </div>
+                <h4 class="skill-name">Python</h4>
+                <p class="skill-desc">Object-oriented programming, data structures, scripting, algorithm design, and package management.</p>
+              </div>
+
+              <!-- Django -->
+              <div class="glass-card skill-card">
+                <div class="skill-card-top">
+                  <div class="skill-icon django-color">
+                    <i class="fa-solid fa-layer-group"></i>
+                  </div>
+                  <span class="skill-chip">Framework</span>
+                </div>
+                <h4 class="skill-name">Django</h4>
+                <p class="skill-desc">MVT architecture, robust ORM, authentication systems, templating, and rapid production-ready development.</p>
+              </div>
+
+              <!-- Flask -->
+              <div class="glass-card skill-card">
+                <div class="skill-card-top">
+                  <div class="skill-icon flask-color">
+                    <i class="fa-solid fa-flask"></i>
+                  </div>
+                  <span class="skill-chip">Microframework</span>
+                </div>
+                <h4 class="skill-name">Flask</h4>
+                <p class="skill-desc">Lightweight microservices, RESTful API endpoints, request routing, and modular application structures.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 3: Database -->
+          <div class="skill-category-block">
+            <div class="category-header">
+              <div class="category-icon-box db-icon">
+                <i class="fa-solid fa-database"></i>
+              </div>
+              <div class="category-text">
+                <h3>Database</h3>
+                <span>Designing structured schemas & efficient relational queries</span>
+              </div>
+            </div>
+
+            <div class="skills-items-grid">
+              <!-- SQL -->
+              <div class="glass-card skill-card">
+                <div class="skill-card-top">
+                  <div class="skill-icon sql-color">
+                    <i class="fa-solid fa-table"></i>
+                  </div>
+                  <span class="skill-chip">Querying</span>
+                </div>
+                <h4 class="skill-name">SQL</h4>
+                <p class="skill-desc">Relational schema design, complex JOINs, aggregation functions, indexing, and data normalization.</p>
+              </div>
+
+              <!-- MySQL -->
+              <div class="glass-card skill-card">
+                <div class="skill-card-top">
+                  <div class="skill-icon mysql-color">
+                    <i class="fa-solid fa-database"></i>
+                  </div>
+                  <span class="skill-chip">RDBMS</span>
+                </div>
+                <h4 class="skill-name">MySQL</h4>
+                <p class="skill-desc">Relational database management, ACID compliance, data integrity, and backend integration with Python/Flask/Django.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== PROJECTS SECTION ==================== -->
+    <section id="projects" class="section projects-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag"><i class="fa-solid fa-diagram-project"></i> Portfolio Showcase</span>
+          <h2 class="section-title">Featured <span class="text-gradient">Projects</span></h2>
+          <p class="section-subtitle">Real-world academic and practical full-stack software solutions</p>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="project-showcase">
+          <!-- Featured Project Card: QR Code-Based Attendance Management System -->
+          <article class="glass-card project-card featured-project">
+            <div class="project-grid">
+              <!-- Project Visual / Interactive Dashboard Mockup -->
+              <div class="project-visual-side">
+                <div class="mockup-frame">
+                  <div class="mockup-header">
+                    <div class="mockup-dots">
+                      <span></span><span></span><span></span>
+                    </div>
+                    <div class="mockup-address">
+                      <i class="fa-solid fa-lock"></i> https://localhost:5000/attendance-portal
+                    </div>
+                    <span class="live-pill"><i class="fa-solid fa-circle"></i> System Live</span>
+                  </div>
+
+                  <!-- Mockup UI Inner Preview -->
+                  <div class="mockup-screen">
+                    <div class="screen-navbar">
+                      <div class="logo-text"><i class="fa-solid fa-qrcode text-gradient"></i> QR Attendance Pro</div>
+                      <div class="user-chip"><i class="fa-regular fa-circle-user"></i> Admin Panel</div>
+                    </div>
+
+                    <div class="screen-body">
+                      <!-- Scanner Card -->
+                      <div class="screen-qr-box">
+                        <div class="qr-target-area">
+                          <svg class="qr-svg-graphic" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <!-- SVG QR Pattern -->
+                            <rect width="100" height="100" fill="#0d1124" rx="8" />
+                            <rect x="10" y="10" width="25" height="25" fill="#38bdf8" rx="4" />
+                            <rect x="15" y="15" width="15" height="15" fill="#0d1124" />
+                            <rect x="19" y="19" width="7" height="7" fill="#38bdf8" />
+                            
+                            <rect x="65" y="10" width="25" height="25" fill="#38bdf8" rx="4" />
+                            <rect x="70" y="15" width="15" height="15" fill="#0d1124" />
+                            <rect x="74" y="19" width="7" height="7" fill="#38bdf8" />
+
+                            <rect x="10" y="65" width="25" height="25" fill="#38bdf8" rx="4" />
+                            <rect x="15" y="70" width="15" height="15" fill="#0d1124" />
+                            <rect x="19" y="74" width="7" height="7" fill="#38bdf8" />
+
+                            <rect x="42" y="12" width="6" height="6" fill="#a855f7" />
+                            <rect x="52" y="18" width="6" height="6" fill="#38bdf8" />
+                            <rect x="45" y="45" width="10" height="10" fill="#a855f7" />
+                            <rect x="65" y="45" width="8" height="8" fill="#38bdf8" />
+                            <rect x="42" y="68" width="8" height="8" fill="#a855f7" />
+                            <rect x="65" y="75" width="15" height="8" fill="#38bdf8" />
+                            <rect x="78" y="65" width="8" height="6" fill="#a855f7" />
+                          </svg>
+                          <div class="scan-laser-line"></div>
+                        </div>
+                        <span class="qr-scan-label"><i class="fa-solid fa-camera"></i> Dynamic QR Scanner Active</span>
+                      </div>
+
+                      <!-- Stats & Live Records -->
+                      <div class="screen-stats-box">
+                        <div class="mini-stat">
+                          <span class="stat-num text-gradient">98.4%</span>
+                          <span class="stat-text">Verification Accuracy</span>
+                        </div>
+                        <div class="mini-stat">
+                          <span class="stat-num text-gradient">&lt; 1s</span>
+                          <span class="stat-text">Instant Logging</span>
+                        </div>
+                        <div class="attendance-log-preview">
+                          <div class="log-row">
+                            <span class="log-badge status-present">Logged</span>
+                            <span class="log-id">Student #1042</span>
+                            <span class="log-time">09:14:02 AM</span>
+                          </div>
+                          <div class="log-row">
+                            <span class="log-badge status-present">Logged</span>
+                            <span class="log-id">Student #1043</span>
+                            <span class="log-time">09:14:28 AM</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Project Description & Details -->
+              <div class="project-info-side">
+                <div class="project-header-bar">
+                  <span class="badge badge-accent"><i class="fa-solid fa-star"></i> Featured Academic Project</span>
+                  <span class="project-category">Full Stack Web Application</span>
+                </div>
+
+                <h3 class="project-title">QR Code-Based Attendance Management System</h3>
+
+                <p class="project-description">
+                  "A web-based attendance management application developed to reduce manual work and digitize the traditional attendance process. The system aims to simplify attendance recording, improve efficiency, and minimize errors associated with manual attendance management."
+                </p>
+
+                <!-- Key Objective Box -->
+                <div class="objective-card">
+                  <div class="objective-header">
+                    <i class="fa-solid fa-bullseye text-gradient"></i>
+                    <strong>Key Objective:</strong>
+                  </div>
+                  <p class="objective-text">
+                    "To make attendance tracking faster, more efficient, and easier to manage through a digital solution."
+                  </p>
+                </div>
+
+                <!-- Technologies Used Badges -->
+                <div class="project-tech-stack">
+                  <span class="tech-badge"><i class="fa-brands fa-python"></i> Python</span>
+                  <span class="tech-badge"><i class="fa-solid fa-flask"></i> Flask</span>
+                  <span class="tech-badge"><i class="fa-brands fa-html5"></i> HTML</span>
+                  <span class="tech-badge"><i class="fa-brands fa-css3-alt"></i> CSS</span>
+                  <span class="tech-badge"><i class="fa-brands fa-js"></i> JavaScript</span>
+                  <span class="tech-badge"><i class="fa-solid fa-database"></i> MySQL</span>
+                </div>
+
+                <!-- Project Action Buttons -->
+                <div class="project-action-buttons">
+                  <button type="button" class="btn btn-primary btn-glow" id="open-project-modal-btn">
+                    <i class="fa-solid fa-eye"></i>
+                    <span>View Project</span>
+                  </button>
+                  <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" title="GitHub Repository Placeholder">
+                    <i class="fa-brands fa-github"></i>
+                    <span>GitHub Code</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CAREER OBJECTIVE SECTION ==================== -->
+    <section id="career-goal" class="section career-section">
+      <div class="container">
+        <div class="career-goal-card glass-card">
+          <div class="career-card-content">
+            <div class="career-badge">
+              <i class="fa-solid fa-compass text-gradient"></i> Professional Aspiration
+            </div>
+
+            <h2 class="career-heading">My Career <span class="text-gradient">Goal</span></h2>
+
+            <div class="career-quote-box">
+              <i class="fa-solid fa-quote-left quote-icon" aria-hidden="true"></i>
+              <blockquote class="career-text">
+                "To begin my professional career as a Python Full Stack Developer, apply my technical knowledge to real-world projects, and grow as a software developer while contributing to innovative and efficient web solutions."
+              </blockquote>
+            </div>
+
+            <div class="career-highlights-strip">
+              <div class="career-pill">
+                <i class="fa-solid fa-laptop-code"></i> Python Full Stack Readiness
+              </div>
+              <div class="career-pill">
+                <i class="fa-solid fa-lightbulb"></i> Real-World Problem Solving
+              </div>
+              <div class="career-pill">
+                <i class="fa-solid fa-chart-line"></i> Continuous Technical Growth
+              </div>
+            </div>
+
+            <div class="career-cta">
+              <a href="#contact" class="btn btn-primary btn-glow">
+                <i class="fa-solid fa-handshake"></i>
+                <span>Let's Connect & Collaborate</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CONTACT SECTION ==================== -->
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag"><i class="fa-regular fa-envelope"></i> Get In Touch</span>
+          <h2 class="section-title">Contact <span class="text-gradient">Me</span></h2>
+          <p class="section-subtitle">Feel free to reach out for career opportunities, projects, or discussions</p>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Left Column: Contact Information -->
+          <div class="contact-info-col glass-card">
+            <h3 class="contact-col-title">Let's Discuss Opportunities</h3>
+            <p class="contact-col-intro">
+              I am actively seeking entry-level Python Full Stack Developer positions where I can contribute my programming, web development, and problem-solving skills.
+            </p>
+
+            <div class="contact-details-list">
+              <!-- Name -->
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fa-solid fa-user"></i>
+                </div>
+                <div class="contact-text">
+                  <span class="contact-label">Full Name</span>
+                  <span class="contact-value">Sayyad Hanifraza Sardar</span>
+                </div>
+              </div>
+
+              <!-- Email Link -->
+              <a href="mailto:sayyadhanif76@gmail.com" class="contact-item contact-link-item">
+                <div class="contact-icon">
+                  <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div class="contact-text">
+                  <span class="contact-label">Email Address</span>
+                  <span class="contact-value highlight-link">sayyadhanif76@gmail.com</span>
+                </div>
+                <i class="fa-solid fa-arrow-up-right-from-square external-link-icon"></i>
+              </a>
+
+              <!-- Phone Link -->
+              <a href="tel:7378709480" class="contact-item contact-link-item">
+                <div class="contact-icon">
+                  <i class="fa-solid fa-phone"></i>
+                </div>
+                <div class="contact-text">
+                  <span class="contact-label">Phone Number</span>
+                  <span class="contact-value highlight-link">+91 7378709480</span>
+                </div>
+                <i class="fa-solid fa-arrow-up-right-from-square external-link-icon"></i>
+              </a>
+
+              <!-- Profile Links -->
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fa-solid fa-globe"></i>
+                </div>
+                <div class="contact-text">
+                  <span class="contact-label">Profiles & Networks</span>
+                  <div class="social-tags-wrap">
+                    <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-tag">
+                      <i class="fa-brands fa-github"></i> GitHub (Placeholder)
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-tag">
+                      <i class="fa-brands fa-linkedin"></i> LinkedIn (Placeholder)
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Current Status Box -->
+            <div class="status-box">
+              <span class="status-indicator-dot"></span>
+              <div class="status-box-content">
+                <strong>Open to Work</strong>
+                <span>Available for Full-Time Junior/Graduate Python Developer Roles</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Contact Form -->
+          <div class="contact-form-col glass-card">
+            <h3 class="contact-col-title">Send a Direct Message</h3>
+            <p class="form-disclaimer">
+              <i class="fa-solid fa-circle-info"></i> Note: This form includes client-side validation for demonstration. Messages can be sent directly via your default email client.
+            </p>
+
+            <form id="contact-form" class="contact-form" novalidate>
+              <!-- Full Name Field -->
+              <div class="form-group">
+                <label for="contact-name" class="form-label">Full Name <span class="required-star">*</span></label>
+                <div class="input-wrapper">
+                  <i class="fa-regular fa-user input-icon"></i>
+                  <input type="text" id="contact-name" name="name" class="form-input" placeholder="e.g. John Doe" required autocomplete="name" />
+                </div>
+                <span class="error-message" id="name-error">Please enter your full name.</span>
+              </div>
+
+              <!-- Email Field -->
+              <div class="form-group">
+                <label for="contact-email" class="form-label">Email Address <span class="required-star">*</span></label>
+                <div class="input-wrapper">
+                  <i class="fa-regular fa-envelope input-icon"></i>
+                  <input type="email" id="contact-email" name="email" class="form-input" placeholder="e.g. johndoe@example.com" required autocomplete="email" />
+                </div>
+                <span class="error-message" id="email-error">Please enter a valid email address.</span>
+              </div>
+
+              <!-- Subject Field -->
+              <div class="form-group">
+                <label for="contact-subject" class="form-label">Subject <span class="required-star">*</span></label>
+                <div class="input-wrapper">
+                  <i class="fa-solid fa-heading input-icon"></i>
+                  <input type="text" id="contact-subject" name="subject" class="form-input" placeholder="e.g. Job Opportunity / Python Developer Role" required />
+                </div>
+                <span class="error-message" id="subject-error">Please enter a subject.</span>
+              </div>
+
+              <!-- Message Field -->
+              <div class="form-group">
+                <label for="contact-message" class="form-label">Message <span class="required-star">*</span></label>
+                <div class="input-wrapper textarea-wrapper">
+                  <i class="fa-regular fa-comment-dots input-icon textarea-icon"></i>
+                  <textarea id="contact-message" name="message" class="form-input form-textarea" rows="4" placeholder="Write your message here..." required></textarea>
+                </div>
+                <span class="error-message" id="message-error">Please write a message with at least 10 characters.</span>
+              </div>
+
+              <!-- Submit Button -->
+              <button type="submit" class="btn btn-primary btn-glow btn-full" id="submit-btn">
+                <i class="fa-regular fa-paper-plane"></i>
+                <span id="submit-text">Send Message</span>
+              </button>
+
+              <!-- Form Status Banner -->
+              <div id="form-feedback" class="form-feedback" role="alert" aria-live="polite"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#home" class="nav-brand">
+            <span class="brand-badge">HS<span class="brand-dot">.</span></span>
+            <span class="brand-text">Sayyad <span class="text-gradient">Hanifraza Sardar</span></span>
+          </a>
+          <p class="footer-role">Aspiring Python Full Stack Developer | BCS Graduate</p>
+        </div>
+
+        <div class="footer-nav">
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-socials">
+          <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub Profile">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn Profile">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+          <a href="mailto:sayyadhanif76@gmail.com" class="social-link" aria-label="Email Me">
+            <i class="fa-solid fa-envelope"></i>
+          </a>
+          <a href="tel:7378709480" class="social-link" aria-label="Call Me">
+            <i class="fa-solid fa-phone"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright-text">
+          &copy; 2026 <strong>Sayyad Hanifraza Sardar</strong>. Aspiring Python Full Stack Developer. All rights reserved.
+        </p>
+
+        <!-- Back to Top Button -->
+        <a href="#home" class="back-to-top-btn" id="back-to-top" aria-label="Scroll back to top of the page">
+          <span>Back to Top</span>
+          <i class="fa-solid fa-arrow-up"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== PROJECT PREVIEW MODAL ==================== -->
+  <div id="project-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" aria-hidden="true">
+    <div class="modal-backdrop" id="modal-backdrop"></div>
+    <div class="modal-dialog glass-card">
+      <button class="modal-close-btn" id="modal-close" aria-label="Close modal dialog">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <div class="modal-header">
+        <span class="badge badge-accent">Academic Project Details</span>
+        <h3 id="modal-title">QR Code-Based Attendance Management System</h3>
+      </div>
+
+      <div class="modal-body">
+        <div class="modal-section">
+          <h4><i class="fa-solid fa-circle-info text-gradient"></i> Overview</h4>
+          <p>
+            A web-based attendance management application developed to reduce manual work and digitize the traditional attendance process. The system aims to simplify attendance recording, improve efficiency, and minimize errors associated with manual attendance management.
+          </p>
+        </div>
+
+        <div class="modal-section">
+          <h4><i class="fa-solid fa-bullseye text-gradient"></i> Core Objective</h4>
+          <p>
+            To make attendance tracking faster, more efficient, and easier to manage through a digital solution.
+          </p>
+        </div>
+
+        <div class="modal-section">
+          <h4><i class="fa-solid fa-code text-gradient"></i> Architecture & Technologies</h4>
+          <div class="skills-tag-wrap">
+            <span class="skill-pill">Python</span>
+            <span class="skill-pill">Flask</span>
+            <span class="skill-pill">HTML5</span>
+            <span class="skill-pill">CSS3</span>
+            <span class="skill-pill">JavaScript</span>
+            <span class="skill-pill">MySQL</span>
+          </div>
+        </div>
+
+        <div class="modal-section">
+          <h4><i class="fa-solid fa-list-check text-gradient"></i> Key Features</h4>
+          <ul class="modal-list">
+            <li>Dynamic student QR code generation with unique identification parameters.</li>
+            <li>Real-time QR scanning camera interface for rapid attendance logging.</li>
+            <li>Automated timestamp records preventing proxy attendance and duplicates.</li>
+            <li>Admin dashboard for managing student rosters and exporting attendance reports.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+          <i class="fa-brands fa-github"></i> Repository (Placeholder)
+        </a>
+        <button type="button" class="btn btn-primary" id="modal-dismiss-btn">
+          Close Preview
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main JavaScript File -->
+  <script src="script.js"></script>
+</body>
+</html>
