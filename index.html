@@ -739,10 +739,12 @@
           <div class="contact-form-col glass-card">
             <h3 class="contact-col-title">Send a Direct Message</h3>
             <p class="form-disclaimer">
-              <i class="fa-solid fa-circle-info"></i> Note: This form includes client-side validation for demonstration. Messages can be sent directly via your default email client.
+              <i class="fa-solid fa-circle-info"></i> Your message will be submitted securely. I will receive it by email.
             </p>
 
-            <form id="contact-form" class="contact-form" novalidate>
+            <form id="contact-form" class="contact-form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+              <input type="hidden" name="form-name" value="contact" />
+              <p class="hidden" style="display:none;"><label>Do not fill this out: <input name="bot-field" /></label></p>
               <!-- Full Name Field -->
               <div class="form-group">
                 <label for="contact-name" class="form-label">Full Name <span class="required-star">*</span></label>
