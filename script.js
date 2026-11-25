@@ -269,40 +269,8 @@ document.addEventListener('DOMContentLoaded', () => {
   subjectInput?.addEventListener('input', () => validateField(subjectInput, subjectInput.value.trim().length > 0));
   messageInput?.addEventListener('input', () => validateField(messageInput, messageInput.value.trim().length >= 10));
 
-  contactForm?.addEventListener('submit', (e) => {
-    e.preventDefault();
-
-    const isNameValid = validateField(nameInput, nameInput.value.trim().length >= 2);
-    const isEmailValid = validateField(emailInput, validateEmail(emailInput.value.trim()));
-    const isSubjectValid = validateField(subjectInput, subjectInput.value.trim().length > 0);
-    const isMessageValid = validateField(messageInput, messageInput.value.trim().length >= 10);
-
-    if (isNameValid && isEmailValid && isSubjectValid && isMessageValid) {
-      // Simulate form submission process
-      submitBtn.disabled = true;
-      const originalText = submitBtn.innerHTML;
-      submitBtn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Processing...';
-
-      setTimeout(() => {
-        submitBtn.disabled = false;
-        submitBtn.innerHTML = originalText;
-
-        formFeedback.className = 'form-feedback success';
-        formFeedback.innerHTML = `
-          <strong><i class="fa-solid fa-circle-check"></i> Form Validation Successful!</strong><br />
-          Thank you, <em>${nameInput.value.trim()}</em>! This is a frontend demonstration. In a production environment, this form connects to a Python/Django or Flask backend API or Email service.<br /><br />
-          <a href="mailto:sayyadhanif76@gmail.com?subject=${encodeURIComponent(subjectInput.value.trim())}&body=${encodeURIComponent('Hi Sayyad,\n\n' + messageInput.value.trim() + '\n\nFrom: ' + nameInput.value.trim() + ' (' + emailInput.value.trim() + ')')}" class="btn btn-outline btn-sm" style="margin-top: 8px;">
-            <i class="fa-solid fa-envelope-open-text"></i> Click to Send via Your Email Client
-          </a>
-        `;
-
-        contactForm.reset();
-      }, 700);
-    } else {
-      formFeedback.className = 'form-feedback error';
-      formFeedback.innerHTML = '<i class="fa-solid fa-triangle-exclamation"></i> Please fill in all required fields correctly before submitting.';
-    }
-  });
+  // Netlify Forms handles the real submission. Do not prevent the native POST.
+  // Browser validation is provided by the required/email input attributes.
 
   // -------------------------------------------------------------------------
   // 8. Interactive Background Canvas (Ambient Constellation Particles)
