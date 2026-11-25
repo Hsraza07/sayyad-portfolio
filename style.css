@@ -2692,3 +2692,59 @@ button, input, textarea {
     }
 }
 
+
+
+/* Actual project screenshot gallery */
+.project-gallery {
+  width: 100%;
+  display: grid;
+  gap: 12px;
+}
+.project-gallery a {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  border: 1px solid var(--glass-border);
+  border-radius: 14px;
+  background: #080c1e;
+  min-width: 0;
+}
+.project-gallery-main {
+  aspect-ratio: 16 / 10;
+}
+.project-gallery-main img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.project-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+.project-gallery-grid a {
+  aspect-ratio: 16 / 10;
+}
+.project-gallery-grid img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform .3s ease;
+}
+.project-gallery a:hover img {
+  transform: scale(1.04);
+}
+.gallery-caption {
+  position: absolute;
+  inset: auto 0 0;
+  padding: 9px 12px;
+  color: #fff;
+  font-size: .78rem;
+  font-weight: 600;
+  background: linear-gradient(transparent, rgba(0,0,0,.82));
+}
+@media (max-width: 900px) {
+  .project-gallery-grid { gap: 8px; }
+}
